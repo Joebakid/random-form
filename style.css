@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  /* background-color: #004788; */
+  background-color: #0067b8;
+
+  color: white;
+  line-height: 2rem;
+}
+
+.img-logo {
+  width: 50px;
+  height: auto;
+}
+
+.mail-title {
+  /* font-weight: bolder; */
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+/* eye-icon on submit button */
+.password-container {
+  width: 100%;
+  position: relative;
+}
+.password-icon {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  cursor: pointer;
+  color: #3498dbae;
+  font-size: 25px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+/* GENERAL CONTAINER */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.container-img {
+  margin-bottom: 6rem;
+}
+
+.container-mail-form {
+  /* padding: 30px; */
+  padding-left: 10px;
+}
+
+/* FORM */
+
+#form {
+  margin: 50px 0;
+  padding: 20px 0;
+}
+
+.field {
+  margin-bottom: 40px;
+}
+
+.field label {
+  display: block;
+  font-size: 20pxpx;
+  color: #f6f3f3;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 3px solid lightblue;
+  width: 100%;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 10px 30px;
+  font-size: 14px;
+  background-color: #4460aa;
+  color: #fff;
+  border: none;
+}
+
+.submit-btn {
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  width: 100%;
+  margin: 30px 0;
+  /* padding: 60px 0; */
+}
+
+.submit-btn:hover {
+  background-color: #263870;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  color: white;
+}
+
+/* .space-block {
+  border: none;
+  color: inherit;
+} */
+
+/* DESKTOP VIEW */
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 35%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+}
