@@ -29,3 +29,17 @@ document.getElementById("form").addEventListener("submit", function (event) {
     }
   );
 });
+
+// password
+function togglePassword() {
+  var passwordInput = document.getElementById("password");
+  var toggleIcon = document.querySelector(".toggle-password");
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    toggleIcon.textContent = "Hide Password";
+  } else {
+    passwordInput.type = "password";
+    toggleIcon.textContent = "Show Password";
+  }
+}

@@ -87,13 +87,15 @@ body {
   border: none;
   border-bottom: 3px solid lightblue;
   width: 100%;
+  color: white;
 }
 
 input[type="submit"] {
   display: block;
   padding: 10px 30px;
   font-size: 14px;
-  background-color: #4460aa;
+  background-color: #263870;
+  font-weight: 500;
   color: #fff;
   border: none;
 }
@@ -103,18 +105,23 @@ input[type="submit"] {
   transition: all 0.5s ease-out;
   width: 100%;
   margin: 30px 0;
+
   /* padding: 60px 0; */
 }
 
 .submit-btn:hover {
-  background-color: #263870;
+  background-color: #081235;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  color: white;
+  /* color: white; */
+}
+
+.toggle-password {
+  cursor: pointer;
 }
 
 /* .space-block {
