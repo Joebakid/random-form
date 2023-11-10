@@ -19,8 +19,6 @@ togglePasswordButton.addEventListener("click", function () {
   isPasswordVisible = !isPasswordVisible;
 });
 
-console.log(openEyeIcon);
-
 //placeholder
 
 // Placeholder
