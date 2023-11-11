@@ -14,21 +14,44 @@ document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
 
   btn.value = "Sending...";
+  // btn.value = "Sent";
 
   const serviceID = "default_service";
   const templateID = "template_sbogitg";
 
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
-      btn.value = "Send Email";
-      alert("Sent!");
+      btn.value = "Submit";
+      Swal.fire({
+        icon: "success",
+        title: "Email Sent!",
+        text: "Your email has been sent successfully.",
+        confirmButtonText: "Okay",
+      });
     },
     (err) => {
-      btn.value = "Send Email";
-      alert(JSON.stringify(err));
+      btn.value = "Submit";
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: JSON.stringify(err),
+        confirmButtonText: "Okay",
+      });
     }
   );
 });
+
+//   emailjs.sendForm(serviceID, templateID, this).then(
+//     () => {
+//       btn.value = "Send Email";
+//       alert("Sent!");
+//     },
+//     (err) => {
+//       btn.value = "Send Email";
+//       alert(JSON.stringify(err));
+//     }
+//   );
+// });
 
 // password
 function togglePassword() {

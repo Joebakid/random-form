@@ -122,6 +122,8 @@ select:focus {
 
 .toggle-password {
   cursor: pointer;
+  display: flex;
+  align-items: flex-end;
 }
 
 /* .space-block {
